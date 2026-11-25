@@ -1,0 +1,2 @@
+[2026-11-16 17:43:47] Collection 'reels' fallback: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dreamm_framme_event.reels' doesn't exist
+[2026-11-16 18:29:03] Database connection failed: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
