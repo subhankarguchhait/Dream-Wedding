@@ -1,0 +1,138 @@
+/* ==========================================================================
+   DREAMM FRAMME EVENT — Responsive layer
+   ========================================================================== */
+
+@media (max-width: 1180px) {
+  .industries__grid { grid-template-columns: repeat(3, 1fr); }
+  .footer__grid { grid-template-columns: 1fr 1fr; }
+  .values__grid { grid-template-columns: repeat(2, 1fr); }
+  .team__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 1024px) {
+  :root { --nav-h: 76px; }
+  .nav__links, .nav__cta { display: none; }
+  .nav__toggle { display: block; }
+  .services__grid, .brand-grid { grid-template-columns: repeat(2, 1fr); }
+  .about-split__grid, .intro__grid, .story__grid, .why__grid, .expertise__grid, .contact__grid { grid-template-columns: 1fr; }
+  .why__intro, .story__media { position: static; }
+  .about-split__media { max-width: 560px; }
+  .about-split__badge { right: 16px; }
+  .intro__media { max-width: 520px; }
+  .story__media { aspect-ratio: 16/10; }
+  .mv__grid { grid-template-columns: 1fr 1fr; }
+  .mv__media { grid-column: 1 / -1; grid-row: 1; min-height: 280px; }
+  .process__list { grid-template-columns: repeat(2, 1fr); gap: 50px 0; }
+  .process__list::before, .process__list::after { display: none; }
+  .stats__grid { grid-template-columns: repeat(2, 1fr); row-gap: 40px; }
+  .industries__grid { grid-template-columns: repeat(2, 1fr); }
+  .stat:nth-child(3) { border-left: 0; }
+  .hero__side { display: none; }
+}
+
+@media (max-width: 720px) {
+  body { font-size: 15px; }
+  .services__grid, .brand-grid, .why__items, .values__grid, .mv__grid, .team__grid, .industries__grid { grid-template-columns: 1fr; }
+  .why-item:nth-child(even) { transform: none; }
+  .ticks { grid-template-columns: 1fr; }
+  .process__list { grid-template-columns: 1fr; }
+  .step { text-align: left; display: grid; grid-template-columns: 64px 1fr; gap: 0 20px; padding: 0; }
+  .step__num { width: 60px; height: 60px; margin: 0; grid-row: span 2; font-size: 22px; }
+  .stats__grid { grid-template-columns: 1fr 1fr; }
+  .stat { padding: 10px; }
+  .footer__grid { grid-template-columns: 1fr; gap: 34px; }
+  .form__row { grid-template-columns: 1fr; }
+  .brand-card { aspect-ratio: 4/4.4; }
+  .brand-modal { padding: 0; align-items: end; }
+  .brand-modal__panel { border-radius: 24px 24px 0 0; max-height: 92svh; }
+  .brand-modal__head { flex-direction: column; align-items: flex-start; }
+  .hero { padding-bottom: 110px; }
+  .hero__actions .btn { width: 100%; }
+  .about-split__badge { padding: 18px 20px; bottom: 20px; }
+  .about-split__badge strong { font-size: 44px; }
+  .page-hero { min-height: 68svh; }
+  .t-slide__quote::before { font-size: 80px; }
+  .wa-float { right: 16px; bottom: 16px; width: 52px; height: 52px; font-size: 24px; }
+  .to-top { right: 20px; bottom: 80px; }
+  .map iframe { height: 320px; }
+  .footer__top { padding-bottom: 50px; }
+}
+
+@media (max-width: 380px) {
+  .brand__text { font-size: 23px; }
+  .brand__mark { width: 32px; height: 32px; }
+  .stats__grid { grid-template-columns: 1fr; }
+  .stat { border-left: 0; }
+}
+
+/* Touch devices: no hover-only reveals */
+@media (hover: none) {
+  .brand-card__reveal { opacity: 1; transform: none; }
+  .member__info p { max-height: 120px; opacity: 1; margin-top: 10px; }
+}
+
+/* ---------- Dreamm Framme Event responsive ---------- */
+@media (max-width: 1180px) {
+  .svc-grid { grid-template-columns: repeat(3, 1fr); }
+  .social__grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 1024px) {
+  .intro2__grid, .split__grid, .svc-detail__grid { grid-template-columns: 1fr; }
+  .split--reverse .split__media, .svc-detail:nth-of-type(even) .svc-detail__media { order: 0; }
+  .intro2__small { right: 0; }
+  .svc-grid { grid-template-columns: repeat(2, 1fr); }
+  .films-grid { grid-template-columns: repeat(2, 1fr); }
+  .equip__grid { grid-template-columns: repeat(2, 1fr); }
+  .story-card, .story-card:nth-child(n) { grid-column: span 12; aspect-ratio: 4/3; }
+  .hs__scroll { display: none; }
+}
+@media (max-width: 720px) {
+  .svc-grid, .films-grid, .equip__grid { grid-template-columns: 1fr; }
+  .social__grid { grid-template-columns: repeat(3, 1fr); }
+  .svc-detail__features { grid-template-columns: 1fr; }
+  .hs__heading { font-size: clamp(38px, 11vw, 56px); }
+  .hs__controls { bottom: 22px; }
+  .hs__controls .container { gap: 12px; }
+  .hs__dots button { width: 28px; }
+  .hs__btn { width: 42px; height: 42px; }
+  .hs__count { min-width: 56px; font-size: 18px; }
+  .hs__count b { font-size: 24px; }
+  .hs__actions .btn { width: 100%; }
+  .lb__stage { padding: 0 8px; }
+  .lb__prev, .lb__next { top: auto; bottom: -64px; transform: none; }
+  .lb__prev { left: calc(50% - 64px); } .lb__next { right: calc(50% - 64px); }
+  .lb__caption { padding-top: 76px; }
+  .album-pager { grid-template-columns: 1fr; }
+  .album-pager a + a { border-left: 0; border-top: 1px solid var(--line); text-align: left; }
+  .albums { columns: 1; }
+  .masonry { columns: 2; column-gap: 6px; }
+  .masonry__item { margin-bottom: 6px; }
+  .play { width: 72px; height: 72px; margin: -36px 0 0 -36px; }
+  .intro2__media { padding-bottom: 60px; }
+  .footer__legal { flex-wrap: wrap; }
+}
+
+/* ---- Dreamm Framme: small-screen fixes ---- */
+.why__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+@media (max-width: 991px) { .why__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) {
+  .why__grid { grid-template-columns: 1fr; }
+  .nav__inner { gap: 10px; }
+  .nav .brand { min-width: 0; flex-shrink: 1; }
+  .nav .brand small, .nav .brand .brand__tag { display: none; }
+  .nav .brand .brand__text { font-size: 19px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+  .nav__toggle { flex-shrink: 0; }
+}
+@media (max-width: 600px) {
+  .hs__controls .container { padding-right: 84px; gap: 14px; }
+  .hs__nav [data-hs-prev], .hs__nav [data-hs-next] { display: none; }
+  .hs__dots button { width: 30px; }
+  .hs__scroll { display: none; }
+}
+
+/* Dreamm Weddings logo sizes on small screens */
+@media (max-width: 600px) {
+  .brand__img { height: 40px; }
+  .brand--footer .brand__img--stacked { height: 120px; }
+  .preloader__logo { width: 160px; }
+}
